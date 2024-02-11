@@ -1,0 +1,30 @@
+@import './global';
+
+.container {
+  padding: 1rem;
+  min-height: 60vh;
+  width: 100%;
+  color: $textColor;
+  background-image: url('../assets/img/bgSvg.svg');
+  background-color: $BgColor;
+  background-blend-mode: soft-light;
+
+  &__header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    padding-top: 1rem;
+    text-shadow: 2px 2px #cccc;
+    cursor: default;
+  }
+}
+
+@import '../componentes/Header/header';
+@import '../pages/Home/home';
+@import '../pages/About/about';
+@import '../pages/Career/career';
+@import '../pages/Skills/skills';
+@import '../pages/Projects/projects';
+@import '../pages/Contact/contact';
+@import '../componentes/Footer/footer';
