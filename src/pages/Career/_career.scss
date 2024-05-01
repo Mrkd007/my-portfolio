@@ -1,13 +1,13 @@
 .career {
   &-container {
     min-height: 38rem;
-    background-color: $secondaryBgColor;
+    background-color: var(--secondary-bg-color);
     padding: 5rem;
     padding-top: 2rem;
   }
 
   &__wrapper {
-    border-left: 0.25rem solid $supportColor;
+    border-left: 0.25rem solid var( --support-color);
     // border-radius: 0.5rem;
     // padding: 2rem 0;
 
@@ -18,7 +18,7 @@
       padding-right: 2rem;
     
       &:hover {
-        background-color: #1B496522;
+        background-color: var(--dark-hover-color);
       }
     }
 
@@ -36,10 +36,10 @@
         align-items: center;
         justify-content: center;
         // margin-right: 1rem;
-        background-color: $textColor;
+        background-color: var(--text-color);
         font-size: 3rem;
         border-radius: 50%;
-        color: $BgColor;
+        color: var(--bg-color);
         font-weight: bold;
         // line-height: 3rem;
         transform: translateX(-1.15rem);
@@ -63,11 +63,11 @@
         // width: 2rem;
         align-items: center;
         justify-content: center;
-        background-color: $textColor;
+        background-color: var(--text-color);
         border-radius: 0.2rem;
-        color: $supportColor;
+        color: var( --support-color);
         transform: translateX(-0.2rem);
-        color: $secondaryBgColor;
+        color: var(--secondary-bg-color);
         padding: 0.5rem 1rem;
         font-weight: bold;
       }
@@ -83,7 +83,7 @@
         flex-direction: column;
         justify-content: center;
         border-radius: 50%;
-        border: 0.25rem solid $supportColor;
+        border: 0.25rem solid var( --support-color);
         padding: 2.5rem;
         max-width: 50%;
         min-height: 15rem;
@@ -91,7 +91,7 @@
         transition: .3s ease-in-out;
     
         &:hover {
-          background-color: #1B496599;
+          background-color: var(--dark-hover-color);
         }
 
         .bubble-box {
@@ -135,8 +135,8 @@
         width: 35%;
         height: 35%;
         min-height: 8rem;
-        border-top: 0.25rem dashed $textColor;
-        border-right: 0.25rem dashed $textColor;
+        border-top: 0.25rem dashed var(--text-color);
+        border-right: 0.25rem dashed var(--text-color);
         border-top-left-radius: 0;
         border-top-right-radius: 75%;
         position: relative;
@@ -160,7 +160,7 @@
 
           &-arrow {
             border-right: none;
-            border-left: 0.25rem dashed $textColor;
+            border-left: 0.25rem dashed var(--text-color);
             border-top-left-radius: 75%;
             border-top-right-radius: 0;
             margin-left: auto;
@@ -187,7 +187,7 @@
 
 /* ================ Media Qurerries Small ======================== */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: $mdWidth) {
   .career {
     &-container {
       padding: 1rem;

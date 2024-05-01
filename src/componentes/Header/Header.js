@@ -54,10 +54,14 @@ const Header = () => {
 						</li>
 					</ul>
 				</nav>
-				<span className={'header__theme-switch' + (currentTheme === 'dark' ? ' enabled' : ' disabled')} onClick={()=>{
+				<span className={'header__theme-switch' + (currentTheme === 'dark' ? ' disabled' : ' enabled')} onClick={()=>{
 					if(currentTheme === 'dark') {
+						document.body.classList.remove('dark');
+						document.body.classList.add('light');
 						setCurrentTheme('light');
 					} else {
+						document.body.classList.remove('light');
+						document.body.classList.add('dark');
 						setCurrentTheme('dark');
 					}
 				}}>

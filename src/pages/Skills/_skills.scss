@@ -10,7 +10,7 @@
       position: relative;
 
       &__btns {
-        background: linear-gradient(to left, $BgColor, transparent);
+        background: linear-gradient(to left, var(--bg-color), transparent);
         padding: 10rem 2rem;
         height: 100%;
         // border-radius: 1rem;
@@ -22,7 +22,7 @@
         z-index: 2;
 
         &.left-btn {
-          background: linear-gradient(to right, $BgColor, transparent);
+          background: linear-gradient(to right, var(--bg-color), transparent);
           right: unset;
           left: -5rem;
         }
@@ -54,8 +54,8 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              background-color: $BgColor ;
-              border: 2px solid $supportColor;
+              background-color: var(--bg-color) ;
+              border: 2px solid var( --support-color);
               border-radius: 50%;
               position: relative;
               z-index: 2;
@@ -74,11 +74,11 @@
               padding: 0.75rem;
               padding-top: 4rem;
               width: 100%;
-              border: 2px solid $supportColor;
+              border: 2px solid var( --support-color);
               transition: .3s ease-in-out;
           
               &:hover {
-                background-color: #1B496599;
+                background-color: var(--dark-hover-color);
               }
 
               &-points {

@@ -3,7 +3,7 @@
     min-height: 38rem;
     padding: 5rem;
     padding-top: 2rem;
-    background-color: $secondaryBgColor;
+    background-color: var(--secondary-bg-color);
 
     .projects-wrapper {
       margin-top: 1rem;
@@ -59,8 +59,8 @@
           //     height: 2.5rem;
           //     padding: 0.5rem 1rem;
           //     border-radius: 0.25rem;
-          //     background-color: $BgColor;
-          //     color: $textColor;
+          //     background-color: var(--bg-color);
+          //     color: var(--text-color);
           //     font-weight: bolder;
           //     position: absolute;
           //     top: 50%;
@@ -118,8 +118,8 @@
                 height: 100%;
                 padding: 0.5rem 1rem;
                 border-radius: 0.25rem;
-                border: 2px solid $supportColor;
-                color: $supportColor;
+                border: 2px solid var( --support-color);
+                color: var( --support-color);
                 background-color: transparent;
                 font-weight: bolder;
                 cursor: pointer;
@@ -143,7 +143,7 @@
 
 /* ================ Media Qurerries Small ======================== */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: $mdWidth) {
   .projects {
     &-container {
       padding: 1rem;

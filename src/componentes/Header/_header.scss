@@ -4,12 +4,12 @@
   justify-content: space-between;
   padding: 0.5rem 1.5rem;
   height: 4rem;
-  // box-shadow: 0px 5px 10px $BgColor;
+  // box-shadow: 0px 5px 10px var(--bg-color);
   position: sticky;
   z-index: 11;
   top: 0;
   background-image: url('../../assets/img/bgSvg.svg');
-  background-color: $secondaryBgColor;
+  background-color: var(--secondary-bg-color);
   background-blend-mode: soft-light;
 
   &__logo-container {
@@ -42,7 +42,7 @@
         min-width: 4rem;
         gap: .25rem;
         position: relative;
-        color: $textColor;
+        color: var(--text-color);
 
         &-satus {
           display: inline-block;
@@ -55,7 +55,7 @@
 
         &:hover {
           .nav-item-satus {
-            background-color: aqua;
+            background-color: var(--light-hover-color);
           }
         }
       }
@@ -70,22 +70,22 @@
       padding: 0.25rem 0.5rem;
       border-radius: 1rem;
       height: 2rem;
-      border: 0.25rem solid $textColor;
-      box-shadow: 2px 3px 5px #000000, inset 2px 3px 5px #2a2a2a;
+      border: 0.25rem solid var(--text-color);
+      box-shadow: 2px 3px 5px var(--shadow-out-color), inset 2px 3px 5px var(--shadow-in-color);
       position: relative;
       cursor: pointer;
-      color: $textColor;
+      color: var(--text-color);
 
       &::after {
         content: '';
         position: absolute;
         width: 1.25rem;
         height: 1.25rem;
-        background: $textColor;
+        background: var(--text-color);
         border-radius: 50%;
         left: 0.15rem;
         top: 0.15rem;
-        box-shadow: 2px 2px 5px #000;
+        box-shadow: 2px 2px 5px var(--shadow-out-color);
         transition: .3s all ease-in-out;
       }
     }
@@ -112,7 +112,7 @@
       height: 0.25rem;
       width: 2rem;
       border-radius: 0.25rem;
-      background-color: $textColor;
+      background-color: var(--text-color);
       display: inline-block;
       transform: rotate(0deg);
       opacity: 1;
@@ -138,7 +138,7 @@
     left: 0;
     top: 4rem;
     background-image: url('../../assets/img/bgSvg.svg');
-    background-color: $secondaryBgColor;
+    background-color: var(--secondary-bg-color);
     background-blend-mode: soft-light;
     width: 100%;
     display: flex;
@@ -166,7 +166,7 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: $mdWidth) {
   .header {
     &__nav, &__theme-switch  {
       // display: none;

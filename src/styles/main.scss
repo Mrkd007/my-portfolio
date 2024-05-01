@@ -9,9 +9,9 @@
   padding: 1rem;
   min-height: 60vh;
   width: 100%;
-  color: $textColor;
+  color: var(--text-color);
   background-image: url('../assets/img/bgSvg.svg');
-  background-color: $BgColor;
+  background-color: var(--bg-color);
   background-blend-mode: soft-light;
 
   &__header {

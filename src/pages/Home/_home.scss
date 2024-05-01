@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: $secondaryBgColor;
+  background-color: var(--secondary-bg-color);
 
   &> div {
     position: relative;
@@ -18,7 +18,7 @@
         font-size: 3rem;
         margin: 0;
         margin-bottom: 0.5rem;
-        color: $supportColor;
+        color: var( --support-color);
       }
       h4 {
         font-size: 1rem;
@@ -35,10 +35,10 @@
       border-radius: 50%;
       // box-shadow: 2px 2px 20px #ccc;
       padding: 0.35rem;
-      border: 0.25rem solid $supportColor;
+      border: 0.25rem solid var( --support-color);
       animation: profileAnimation 2s ease-in-out;
       position: relative;
-      background-color: $BgColor;
+      background-color: var(--bg-color);
 
       &-img {
         width: 100%;
@@ -61,8 +61,8 @@
         position: absolute;
         // box-shadow: 2px 2px 20px #ccc;
         padding: 0.35rem;
-        border: 0.25rem solid $supportColor;
-        background-color: $BgColor;
+        border: 0.25rem solid var( --support-color);
+        background-color: var(--bg-color);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -249,7 +249,7 @@
   
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: $mdWidth) {
 
   .home-container {
     flex-direction: column;

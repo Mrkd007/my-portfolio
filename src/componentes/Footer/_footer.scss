@@ -1,5 +1,5 @@
 footer {
-  // background: $secondaryBgColor;
+  // background: var(--secondary-bg-color);
   // padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;
@@ -11,7 +11,7 @@ footer {
 }
 
 footer a {
-  color: $textColor;
+  color: var(--text-color);
 }
 
 .footer__logo {
@@ -38,8 +38,8 @@ footer a {
 }
 
 .footer__socials a {
-  background: $BgColor;
-  color: $textColor;
+  background: var(--bg-color);
+  color: var(--text-color);
   padding: 0.8rem;
   border-radius: 0.7rem;
   display: flex;
@@ -48,13 +48,13 @@ footer a {
 
 .footer__socials a:hover {
   background: transparent;
-  color: $textColor;
-  border-color: $supportColor;
+  color: var(--text-color);
+  border-color: var( --support-color);
 }
 
 .footer__copyright {
   // margin-bottom: 4rem;
-  color: $textColor;
+  color: var(--text-color);
 }
 
 /* ================ Media Qurerries Medium ======================== */
@@ -64,7 +64,7 @@ footer a {
 
 /* ================ Media Qurerries Small ======================== */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: $mdWidth) {
   .permalinks {
       flex-direction: column;
       gap: 1.5rem;
