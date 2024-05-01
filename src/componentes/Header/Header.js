@@ -12,6 +12,7 @@ import { RiServiceLine } from "react-icons/ri";
 const Header = () => {
 	const [size, setSize] = useState([0, 0]);
 	const [menuOpen, setMenuOpen] = useState(false);
+	const [currentTheme, setCurrentTheme] = useState('dark');
 	useLayoutEffect(() => {
 		const updateSize = () => {
 			setSize([window.innerWidth, window.innerHeight]);
@@ -48,15 +49,21 @@ const Header = () => {
 						</li>
 						<li className='nav-item'>
 							<BiMessageSquareDetail className='nav-item-icon' />
-							<span className='nav-item-title'>Constant</span>
+							<span className='nav-item-title'>Contact</span>
 							<span className='nav-item-satus'></span>
 						</li>
 					</ul>
 				</nav>
-				<span className='header__theme-switch'>
+				<span className={'header__theme-switch' + (currentTheme === 'dark' ? ' enabled' : ' disabled')} onClick={()=>{
+					if(currentTheme === 'dark') {
+						setCurrentTheme('light');
+					} else {
+						setCurrentTheme('dark');
+					}
+				}}>
 					<span className='theme-switch-wrapper'>
-						<BiSolidMoon />
-						<BiSolidSun />
+						<BiSolidMoon style={{transform: 'translate(-3px, -2px)'}} />
+						<BiSolidSun style={{transform: 'translate(3px, -2px)'}} />
 					</span>
 				</span>
 			</>

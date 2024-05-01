@@ -27,12 +27,10 @@ const Contact = () => {
 	};
 
 	return (
-    <section className='container'>
-		<section id='contact'>
-			<h5>Get In Touch</h5>
-			<h2>Contact Me</h2>
+    <section className='container contact-container'>
+			<div className="container__header">Contact Me</div>
 
-			<div className='container contact__conatiner'>
+			<div className='contact__wrapper'>
 				<div className='contact__options'>
 					<article className='contact__option'>
 						<MdOutlineEmail className='contact__option-icon' />
@@ -73,6 +71,7 @@ const Contact = () => {
 					onSubmit={(e) => {
 						sendEmail(e);
 					}}
+					className="contact__form"
 				>
 					<input
 						type='text'
@@ -95,12 +94,11 @@ const Contact = () => {
 						placeholder='Your Message'
 						required
 					></textarea>
-					<button type='submit' className='btn btn-primary'>
+					<button type='submit' className='btn btn-primary contact-form-submit-btn'>
 						Send Message
 					</button>
 				</form>
 			</div>
-		</section>
     </section>
 	);
 };

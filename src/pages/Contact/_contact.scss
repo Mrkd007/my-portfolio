@@ -5,10 +5,30 @@
   gap: 12%;
 }
 
+.contact__wrapper {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
 .contact__options {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  min-width: 15rem;
+}
+
+.contact__form {
+  flex: 1;
+  width: 100%;
+  margin-top: 0.25rem;
+  gap: 2rem;
+
+  textarea {
+    min-height: 15rem;
+  }
 }
 
 .contact__option {
@@ -20,11 +40,20 @@
   transition: var(--transition);
   overflow: hidden;
   word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  * {
+    margin: 0;
+  }
 }
 
 .contact__option:hover {
   background: transparent;
   border-color: $secondaryBgColor;
+  border: 2px solid $textColor;
 }
 
 .contact__option-icon {
@@ -33,7 +62,7 @@
 }
 
 .contact__option a {
-  margin-top: 0.7rem;
+  // margin-top: 0.7rem;
   display: inline-block;
   font-size: 0.8rem;
 }
@@ -43,7 +72,20 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem;
+
+  .contact-form-submit-btn {
+    height: 3.5rem;
+    border-radius: 0.25rem;
+    width: 12rem;
+    font-weight: bolder;
+    border: 2px solid $supportColor;
+    color: $supportColor;
+    margin: 0 auto;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+  }
 }
 
 input, textarea {
@@ -51,9 +93,10 @@ input, textarea {
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
-  border: 2px solid $secondaryBgColor;
+  border: 2px solid $textColor;
   resize: none;
   color: $textColor;
+  outline-color: $textColor;
 }
 
 /* ================ Media Qurerries Medium ======================== */
@@ -67,7 +110,10 @@ input, textarea {
 
 /* ================ Media Qurerries Small ======================== */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
+  .contact__wrapper {
+    flex-direction: column;
+  }
   .container.contact__conatiner {
       width: 90%;
   }

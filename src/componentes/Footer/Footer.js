@@ -5,7 +5,7 @@ import { IoLogoTwitter } from "react-icons/io";
 const Footer = () => {
 	return (
     
-    <section className='container career-container'>
+    <section className='container career-container' style={{minHeight: '12rem', paddingBottom: '2rem'}}>
 		<footer>
 			<a href='#home' className='footer__logo'>
 				KrishnDevashish
@@ -19,16 +19,10 @@ const Footer = () => {
 					<a href='#about'>About</a>
 				</li>
 				<li>
-					<a href='#experience'>Experience</a>
+					<a href='#career'>Career</a>
 				</li>
 				<li>
-					<a href='#services'>Services</a>
-				</li>
-				<li>
-					<a href='#portfolio'>Portfolio</a>
-				</li>
-				<li>
-					<a href='testimonials'>Testimonials</a>
+					<a href='#projects'>Projects</a>
 				</li>
 				<li>
 					<a href='#contact'>Contact</a>

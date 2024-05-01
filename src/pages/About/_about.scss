@@ -102,3 +102,42 @@
     }
   }
 }
+
+/* ================ Media Qurerries Medium ======================== */
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+/* ================ Media Qurerries Small ======================== */
+
+@media screen and (max-width: 720px) {
+  .about-container {
+    padding: 1rem;
+
+    .container__header {
+      padding: 0;
+    }
+
+    &__profile {
+      left: 50%;
+      top: -9rem;
+      transform: translate(-50%, 0%);
+    }
+
+    &__details {
+      left: 0;
+      width: 100%;
+      margin-top: 10rem;
+      padding-right: 0;
+
+      &-name {
+        margin-top: 5.5rem;
+      }
+
+      &-basic {
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}

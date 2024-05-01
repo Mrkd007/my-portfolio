@@ -9,13 +9,16 @@ const Projects = () => {
           <div className="projects-wrapper__block">
             <div className="projects-wrapper__block-showcase">
               <img src={Image.ProductImg1} alt="projectImg" width={100}/>
+              {/* <div className="projects-wrapper__block-showcase-overlay">
+                <button>View Details</button>
+              </div> */}
             </div>
             <div className="projects-wrapper__block-details">
               <h1 className="block-details__title">Project 1</h1>
               <p className="block-details__desc">This project is all about showcase and brief intro section to the project</p>
               <div className="block-details__other">
                 <h3 className="block-details__other-subHeader">Key points</h3>
-                <ul className="details__other-list">
+                <ul className="block-details__other-list">
                   <li>This is a featured project</li>
                   <li>This is a featured project</li>
                   <li>This is a featured project</li>
@@ -37,7 +40,7 @@ const Projects = () => {
               <p className="block-details__desc">This project is all about showcase and brief intro section to the project</p>
               <div className="block-details__other">
                 <h3 className="block-details__other-subHeader">Key points</h3>
-                <ul className="details__other-list">
+                <ul className="block-details__other-list">
                   <li>This is a featured project</li>
                   <li>This is a featured project</li>
                   <li>This is a featured project</li>
@@ -59,7 +62,7 @@ const Projects = () => {
               <p className="block-details__desc">This project is all about showcase and brief intro section to the project</p>
               <div className="block-details__other">
                 <h3 className="block-details__other-subHeader">Key points</h3>
-                <ul className="details__other-list">
+                <ul className="block-details__other-list">
                   <li>This is a featured project</li>
                   <li>This is a featured project</li>
                   <li>This is a featured project</li>

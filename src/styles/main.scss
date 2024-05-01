@@ -1,5 +1,10 @@
 @import './global';
 
+
+* {
+  transition: .3s all ease-in-out;
+}
+
 .container {
   padding: 1rem;
   min-height: 60vh;
