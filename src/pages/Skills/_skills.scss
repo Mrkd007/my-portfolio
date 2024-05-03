@@ -10,7 +10,7 @@
       position: relative;
 
       &__btns {
-        background: linear-gradient(to left, var(--bg-color), transparent);
+        background: linear-gradient(to left, var(--dark-hover-color), transparent);
         padding: 10rem 2rem;
         height: 100%;
         // border-radius: 1rem;
@@ -22,9 +22,15 @@
         z-index: 2;
 
         &.left-btn {
-          background: linear-gradient(to right, var(--bg-color), transparent);
+          background: linear-gradient(to right, var(--dark-hover-color), transparent);
           right: unset;
           left: -5rem;
+        }
+
+        &.disabled {
+          opacity: 0.5;
+          user-select: none;
+          cursor: not-allowed;
         }
       }
 
@@ -38,7 +44,9 @@
         gap: 2rem;
         // transform: translateY(-1.5rem);
         position: relative;
-        left: 5rem;
+        left: 2rem;
+        scroll-behavior: smooth;
+        padding: 0 2rem;
 
         &-item {
           min-width: 15rem;
