@@ -28,7 +28,7 @@
       display: flex;
       align-items: center;
       height: 100%;
-      gap: .25rem;
+      gap: .75rem;
 
       .nav-item {
         list-style: none;
@@ -54,6 +54,12 @@
         }
 
         &:hover {
+          .nav-item-satus {
+            background-color: var(--light-hover-color);
+          }
+        }
+
+        &.active {
           .nav-item-satus {
             background-color: var(--light-hover-color);
           }

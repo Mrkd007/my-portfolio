@@ -2,7 +2,7 @@ import Image from "../../utils/images"
 
 const Skills = () => {
   return (
-    <section className='container skills-container'>
+    <section id='skillSection' className='container skills-container'>
 			<div className='container__header'>Skills</div>
       <div className="skills-wrapper">
         <div className="skills-wrapper__btns left-btn">&lt;</div>

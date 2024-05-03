@@ -12,7 +12,7 @@ import CV from "../../assets/Krishna_devashish_resume.pdf";
 
 const About = () => {
 	return (
-		<section className='container about-container'>
+		<section id='aboutSection' className='container about-container'>
 			<div className='container__header'>About Me</div>
 			<div className='about-container__details'>
 				<div className='about-container__profile'>

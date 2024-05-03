@@ -2,7 +2,7 @@ import Image from "../../utils/images";
 
 const Home = () => {
 	return (
-		<section className='container home-container'>
+		<section id='homeSection' className='container home-container'>
 			<div className='home-container-left'>
 				<h2>Hi, I am</h2>
 				<h1>Krishn Devashish</h1>

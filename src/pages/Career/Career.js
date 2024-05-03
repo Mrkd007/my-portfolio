@@ -2,7 +2,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const Career = () => {
 	return (
-		<section className='container career-container'>
+		<section id='careerSection' className='container career-container'>
 			<div className='container__header'>Career</div>
 			<div className='career__wrapper'>
 				<div className='career__wrapper-group'>

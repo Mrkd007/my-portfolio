@@ -2,7 +2,7 @@ import Image from "../../utils/images"
 
 const Projects = () => {
   return (
-    <section className='container projects-container'>
+    <section id='projectSection' className='container projects-container'>
 			<div className='container__header'>Projects</div>
       <div className="projects-wrapper">
         <div className="projects-wrapper__content">
