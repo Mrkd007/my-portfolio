@@ -12,10 +12,10 @@ const Contact = () => {
 		e.preventDefault();
 
 		emailjs.sendForm(
-			"service_46jbiuy",
+			"qdnWOUSSF9wf_HfuA",
 			"template_yx6mbbc",
 			form.current,
-			"user_r3a5JTBcfc9Xnu5BfxFnc",
+			"QTy_Z7B1oyhuTXHCw81jv",
 		);
 		// .then((result) => {
 		//     console.log(result.text);
@@ -33,35 +33,35 @@ const Contact = () => {
 			<div className='contact__wrapper'>
 				<div className='contact__options'>
 					<article className='contact__option'>
-						<MdOutlineEmail className='contact__option-icon' />
-						<h4>Email</h4>
-						<h5>Krishndevashish17@gmail.com</h5>
 						<a
 							href='mailto:Krishndevashish17@gmail.com'
 							target='_blank'
 							rel='noreferrer'
 						>
-							Send a Message
+							<MdOutlineEmail className='contact__option-icon' />
+							<h4>Email</h4>
+							<h5>Krishndevashish17@gmail.com</h5>
+							<span>Click to send message</span>
 						</a>
 					</article>
 					<article className='contact__option'>
-						<RiMessengerLine className='contact__option-icon' />
-						<h4>Messanger</h4>
-						<h5>Krishn Devasish</h5>
 						<a href='https://m.me/MrKD17' target='_blank' rel='noreferrer'>
-							Send a Message
+							<RiMessengerLine className='contact__option-icon' />
+							<h4>Messanger</h4>
+							<h5>Krishn Devasish</h5>
+							<span>Click to send message</span>
 						</a>
 					</article>
 					<article className='contact__option'>
-						<BsWhatsapp className='contact__option-icon' />
-						<h4>WhatsApp</h4>
-						<h5>+917077364854</h5>
 						<a
-							href='https://api.whatsapp.com/send?phone=+917978423156'
+							href='https://wa.me/send?phone=7077364854'
 							target='_blank'
 							rel='noreferrer'
 						>
-							Send a Message
+							<BsWhatsapp className='contact__option-icon' />
+							<h4>WhatsApp</h4>
+							<h5>+917077364854</h5>
+							<span>Click to send message</span>
 						</a>
 					</article>
 				</div>

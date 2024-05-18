@@ -21,6 +21,9 @@ $lgWidth: 1200px;
   --light-hover-color: #159e9e99;
   --shadow-out-color: #000000aa;
   --shadow-in-color: #2c2c2caa;
+  --transition: all 0.3s ease-in-out;
+  
+  scroll-behavior: smooth;
 }
 
 body.light {

@@ -12,13 +12,13 @@
     // padding: 2rem 0;
 
     &-group {
-      transition: .3s ease-in-out;
+      transition: var(--transition);
       margin-bottom: 2rem;
       padding-bottom: 2rem;
       padding-right: 2rem;
     
       &:hover {
-        background-color: var(--dark-hover-color);
+        // background-color: var(--dark-hover-color);
       }
     }
 
@@ -76,6 +76,12 @@
         display: flex;
         align-items: center;
         width: 100%;
+
+        &:hover {
+          .career__wrapper-bubble-box {
+            background-color: var(--dark-hover-color);
+          }
+        }
       }
 
       &-box {
@@ -88,7 +94,7 @@
         max-width: 50%;
         min-height: 15rem;
         margin-left: 2rem;
-        transition: .3s ease-in-out;
+        transition: var(--transition);
     
         &:hover {
           background-color: var(--dark-hover-color);

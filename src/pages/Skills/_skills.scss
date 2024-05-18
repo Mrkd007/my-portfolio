@@ -71,11 +71,7 @@
 
               img {
                 height: 4rem;
-                transition: .3s ease-in-out;
-            
-                &:hover {
-                  transform: scale(1.05);
-                }
+                transition: var(--transition);
               }
             }
             &__body {
@@ -83,14 +79,19 @@
               padding-top: 4rem;
               width: 100%;
               border: 2px solid var( --support-color);
-              transition: .3s ease-in-out;
-          
-              &:hover {
-                background-color: var(--dark-hover-color);
-              }
+              transition: var(--transition);
 
               &-points {
               }
+            }
+          }
+
+          &:hover {
+            .skills-item__header img {
+              transform: scale(1.05);
+            }
+            .skills-item__body {
+              background-color: var(--dark-hover-color);
             }
           }
         }

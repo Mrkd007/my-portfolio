@@ -24,7 +24,7 @@
       height: 100%;
       object-fit: contain;
       transform: scale(1);
-      transition: 0.3s ease-in-out;
+      transition: var(--transition);
 
       &:hover {
         transform: scale(1.025);
@@ -46,7 +46,7 @@
     min-height: 25rem;
     gap: 0.5rem;
     padding-left: 0rem;
-    transition: .3s ease-in-out;
+    transition: var(--transition);
 
     &:hover {
       background-color: var(--dark-hover-color);
@@ -67,7 +67,7 @@
         width: 1.5rem;
         cursor: pointer;
         transform: scale(1);
-        transition: 0.3s ease-in-out;
+        transition: var(--transition);
   
         &:hover {
           transform: scale(1.25);
@@ -95,7 +95,7 @@
     font-weight: bold;
     align-items: center;
     transform: scale(1);
-    transition: 0.3s ease-in-out;
+    transition: var(--transition);
 
     &:hover {
       transform: scale(1.025);

@@ -2,7 +2,7 @@
 
 
 * {
-  transition: .3s all ease-in-out;
+  transition: var(--transition);
 }
 
 .container {
