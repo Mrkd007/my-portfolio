@@ -1,2 +1,0 @@
-export const UPDATE_ACTIVE_ROUTE = "UPDATE_ACTIVE_ROUTE";
-export const UPDATE_THEME = "UPDATE_THEME";
